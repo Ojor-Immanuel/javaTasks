@@ -4,23 +4,13 @@ public class Tasks13 {
 
         Scanner input = new Scanner(System.in);
 
-        int radius;
-        double area;
-        int diameter;
-        double circumference;
+        System.out.println("Enter the radius: ");
+        int radius = input.nextInt();
 
 
-
-        System.out.println("Enter a number: ");
-        radius = input.nextInt();
-
-        diameter = 2 * radius;
-        circumference = 2* Math.PI* radius;
-        area = Math.PI * radius* radius;
-
-        System.out.println(diameter);
-        System.out.println(circumference);
-        System.out.println(area);
+        System.out.printf("diameter = %d%n", 2 * radius);
+        System.out.printf("circumference = %f%n", 2 * Math.PI * radius);
+        System.out.printf("area = %f%n", Math.PI * radius * radius);
 
 
 
